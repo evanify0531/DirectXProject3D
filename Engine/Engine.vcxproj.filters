@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="00. Engine">
+      <UniqueIdentifier>{b288ebc4-daac-498d-9508-5de3d5068e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Graphics">
+      <UniqueIdentifier>{19135898-87c3-463f-8f4f-cde282950165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Managers">
+      <UniqueIdentifier>{3edb5f0c-3771-4d7a-9221-64cc49ae9d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. GameObjects">
+      <UniqueIdentifier>{9069bd5f-48dc-4ef4-8e7b-69e19bb815fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Components">
+      <UniqueIdentifier>{3f4adf51-fb7f-42d9-b10f-048293de3cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Utils">
+      <UniqueIdentifier>{f16a5d45-2818-4aef-b586-0e0375ba1c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99. Headers">
+      <UniqueIdentifier>{cf96d620-8980-48f2-b3aa-50f4ce5fced4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>99. Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleMath.cpp">
+      <Filter>98. Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>98. Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EnginePch.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleMath.h">
+      <Filter>98. Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>98. Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleMath.inl">
+      <Filter>98. Utils</Filter>
+    </None>
+  </ItemGroup>
+</Project>
