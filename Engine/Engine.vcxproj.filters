@@ -93,6 +93,9 @@
     <ClCompile Include="Utils.cpp">
       <Filter>98. Utils</Filter>
     </ClCompile>
+    <ClCompile Include="GeometryHelper.cpp">
+      <Filter>01. Graphics\Buffer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -163,6 +166,9 @@
     </ClInclude>
     <ClInclude Include="Utils.h">
       <Filter>98. Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryHelper.h">
+      <Filter>01. Graphics\Buffer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -41,7 +41,7 @@ void Pass::BeginDraw()
 {
 	pass->ComputeStateBlockMask(&stateblockMask);
 
-	DC->IASetInputLayout(inputLayout.Get());
+	DC->IASetInputLayout(inputLayout.Get()); //Input layout not changing?
 	pass->Apply(0, DC.Get());
 }
 
