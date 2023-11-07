@@ -28,5 +28,6 @@ void TriangleDemo::Render()
 
 	DC->IASetVertexBuffers(0, 1, _buffer->GetComPtr().GetAddressOf(), &stride, &offset);
 
+	//technique, pass 설정가능
 	_shader->Draw(0, 0, 3);
 }
