@@ -8,9 +8,9 @@ void TriangleDemo::Init()
 	{
 		_vertices.resize(3);
 
-		_vertices[0].position = Vec3{ -0.05f, 0.f, 0.f };
-		_vertices[1].position = Vec3{ 0.f, 0.05f, 0.f };
-		_vertices[2].position = Vec3{ 0.05f, 0.f, 0.f };
+		_vertices[0].position = Vec3{ -0.5f, 0.f, 0.f };
+		_vertices[1].position = Vec3{ 0.f, 0.5f, 0.f };
+		_vertices[2].position = Vec3{ 0.5f, 0.f, 0.f };
 	}
 
 	_buffer = make_shared<VertexBuffer>();
@@ -28,6 +28,6 @@ void TriangleDemo::Render()
 
 	DC->IASetVertexBuffers(0, 1, _buffer->GetComPtr().GetAddressOf(), &stride, &offset);
 
-	//technique, pass 설정가능
+	//technique, pass 
 	_shader->Draw(0, 0, 3);
 }
