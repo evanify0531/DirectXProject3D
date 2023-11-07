@@ -20,12 +20,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="02. QuadDemo.h" />
+    <ClInclude Include="03. ConstBufferDemo.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="01. TriangleDemo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="02. QuadDemo.cpp" />
+    <ClCompile Include="03. ConstBufferDemo.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -44,6 +46,7 @@
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Effect</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Effect</ShaderType>
     </FxCompile>
+    <FxCompile Include="..\Shaders\03. ConstBuffer.fx" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -150,6 +153,7 @@
     </FxCompile>
     <FxCompile>
       <ShaderModel>5.0</ShaderModel>
+      <ShaderType>Effect</ShaderType>
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -172,6 +176,7 @@
     </FxCompile>
     <FxCompile>
       <ShaderModel>5.0</ShaderModel>
+      <ShaderType>Effect</ShaderType>
     </FxCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
