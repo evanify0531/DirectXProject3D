@@ -7,7 +7,7 @@
 
 void SamplerDemo::Init()
 {
-	_shader = make_shared<Shader>(L"04. World.fx");
+	_shader = make_shared<Shader>(L"05. Sampler.fx");
 
 	//Object
 	_geometry = make_shared<Geometry<VertexTextureData>>();
