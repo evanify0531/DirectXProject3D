@@ -10,9 +10,6 @@
     <Filter Include="02. Managers">
       <UniqueIdentifier>{3edb5f0c-3771-4d7a-9221-64cc49ae9d94}</UniqueIdentifier>
     </Filter>
-    <Filter Include="03. GameObjects">
-      <UniqueIdentifier>{9069bd5f-48dc-4ef4-8e7b-69e19bb815fc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="04. Components">
       <UniqueIdentifier>{3f4adf51-fb7f-42d9-b10f-048293de3cfd}</UniqueIdentifier>
     </Filter>
@@ -30,6 +27,9 @@
     </Filter>
     <Filter Include="00. Engine\Resource">
       <UniqueIdentifier>{d9b73387-1324-49ec-917f-a75baf185492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. GameObject">
+      <UniqueIdentifier>{9069bd5f-48dc-4ef4-8e7b-69e19bb815fc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +95,21 @@
     </ClCompile>
     <ClCompile Include="GeometryHelper.cpp">
       <Filter>01. Graphics\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>03. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>04. Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>04. Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>04. Components</Filter>
+    </ClCompile>
+    <ClCompile Include="MonoBehaviour.cpp">
+      <Filter>04. Components</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -169,6 +184,21 @@
     </ClInclude>
     <ClInclude Include="GeometryHelper.h">
       <Filter>01. Graphics\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>03. GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>04. Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>04. Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>04. Components</Filter>
+    </ClInclude>
+    <ClInclude Include="MonoBehaviour.h">
+      <Filter>04. Components</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

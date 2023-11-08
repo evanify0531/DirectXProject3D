@@ -5,26 +5,14 @@
 class GeometryHelper
 {
 public:
-	static void CreateQuad(shared_ptr<Geometry<VertexColorData>> geometry, Color color)
-	{
-		vector<VertexColorData> vtx;
-		vtx.resize(4);
+	static void CreateQuad(shared_ptr<Geometry<VertexColorData>> geometry, Color color);
 
-		vtx[0].position = Vec3(-0.5f, -0.5f, 0.f);
-		vtx[0].color = color;
-		vtx[1].position = Vec3(-0.5f, 0.5f, 0.f);
-		vtx[1].color = color;
-		vtx[2].position = Vec3(0.5f, -0.5f, 0.f);
-		vtx[2].color = color;
-		vtx[3].position = Vec3(0.5f, 0.5f, 0.f);
-		vtx[3].color = color;
-		geometry->SetVertices(vtx);
+	static void CreateQuad(shared_ptr<Geometry<VertexTextureData>> geometry);
+	static void CreateCube(shared_ptr<Geometry<VertexTextureData>> geometry);
+	static void CreateSphere(shared_ptr<Geometry<VertexTextureData>> geometry);
+	static void CreateGrid(shared_ptr<Geometry<VertexTextureData>> geometry, int32 sizeX, int32 sizeZ);
 
-		//1 3
-		//0 2
-		//clock-wise
-		vector<uint32> idx = { 0, 1, 2, 2, 1, 3 };
-		geometry->SetIndices(idx);
-	}
+
+
 };
 
