@@ -8,8 +8,6 @@
 
 void MeshDemo::Init()
 {
-	_shader = make_shared<Shader>(L"07. Normal.fx");
-
 	//Camera
 	_camera = make_shared<GameObject>();
 	_camera->GetOrAddTransform();
