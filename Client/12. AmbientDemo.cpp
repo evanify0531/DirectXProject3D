@@ -10,7 +10,7 @@
 void AmbientDemo::Init()
 {
 	RESOURCES->Init();
-	_shader = make_shared<Shader>(L"08. GlobalTest.fx");
+	_shader = make_shared<Shader>(L"09. Lighting_Ambient.fx");
 
 	//Camera
 	_camera = make_shared<GameObject>();
