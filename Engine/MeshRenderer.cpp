@@ -33,14 +33,14 @@ void MeshRenderer::Update()
 	DC->IASetIndexBuffer(_mesh->GetIndexBuffer()->GetComPtr().Get(), DXGI_FORMAT_R32_UINT, 0);
 
 	_shader->DrawIndexed(0, 0, _mesh->GetIndexBuffer()->GetCount(), 0, 0);
-}
-*/
+}*/
+
 
 void MeshRenderer::Update()
 {
 	if (_mesh == nullptr || _texture == nullptr || _shader == nullptr)
 		return;
-
+	
 	_shader->GetSRV("DiffuseMap")->SetResource(_texture->GetComPtr().Get());
 
 	auto world = GetTransform()->GetWorldMatrix();

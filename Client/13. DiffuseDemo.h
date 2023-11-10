@@ -19,6 +19,6 @@ public:
 	//Camera
 	shared_ptr<GameObject> _camera;
 
-	Vec3 _lightDir = Vec3(0.f, -1.f, 0.f);
+	Vec3 _lightDir = Vec3(1.f, -1.f, 0.f);
 };
 

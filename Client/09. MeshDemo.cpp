@@ -5,6 +5,7 @@
 #include "GameObject.h"
 #include "CameraScript.h"
 #include "MeshRenderer.h"
+#include "Mesh.h"
 
 void MeshDemo::Init()
 {

@@ -61,10 +61,10 @@ void DiffuseDemo::Update()
 	RENDER->Update();
 
 	//
-	Vec4 lightDiffuse{ 0.5f, 0.5f, 0.5f, 1.f };
+	Vec4 lightDiffuse{ 1.f, 1.f, 1.f, 1.f };
 	_shader->GetVector("LightDiffuse")->SetFloatVector((float*)&lightDiffuse);
 
-	Vec3 lightDir{ 1.f, -1.f, 1.f };
+	Vec3 lightDir{ -1.f, -1.f, 0.f };
 	lightDir.Normalize();
 	_shader->GetVector("LightDir")->SetFloatVector((float*)&lightDir);
 

@@ -19,7 +19,7 @@ VertexOutput VS(VertexTextureNormal input)
 }
 
 
-// Ambient
+// Diffuse
 
 float4 PS(VertexOutput input) : SV_TARGET
 {   
